@@ -8,7 +8,9 @@ The application allows users to send in messages in the format ``who [person nam
 Example::
 
     >>> who michael jackson
-    <<< Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American recording artist, entertainer and businessman. Often referred to as the King of Pop, or by his initials MJ, Jackson is recognized as the most successful entertainer of all time by Guinness World Records.
+    <<< Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American recording artist, 
+        entertainer and businessman. Often referred to as the King of Pop, or by his initials MJ,
+        Jackson is recognized as the most successful entertainer of all time by Guinness World Records.
 
 Getting Started
 -----------------
