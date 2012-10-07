@@ -3,7 +3,7 @@ Who AppFog / Sawanet App
 
 This is a very simple Django application that demonstrates creating an SMS endpoint for Sawanet. (http://www.sawanet.com)
 
-The application allows users to send in messages in the format ```who [person name]``` and receive a brief summary from the Wikipedia page for that person.
+The application allows users to send in messages in the format ``who [person name]`` and receive a brief summary from the Wikipedia page for that person.
 
 Example queries::
 
@@ -19,11 +19,11 @@ First create a directory to work in and move into it::
     % mkdir smsproject
     % cd smsproject
 
-Now download the git repo into the ```who``` directory::
+Now download the git repo into the ``who`` directory::
  
     % git clone git://github.com/nyaruka/sawanet-django-who.git who
 
-Create a virtual environment.  Note AppFog doesn't like virtual environments to be in the same directory as the app, so you have to create this in the ```smsproject``` directory::
+Create a virtual environment.  Note AppFog doesn't like virtual environments to be in the same directory as the app, so you have to create this in the ``smsproject`` directory::
 
     % virtualenv env
     % source env/bin/activate
@@ -41,7 +41,7 @@ And start the server::
 
     % python manage.py runserver
 
-You should be able to test the application at ```http://localhost:8000```
+You should be able to test the application at ``http://localhost:8000``
 
 
 Installing at Appfog
@@ -62,11 +62,11 @@ Once you confirm your account details, claim a keyword to use.  You'll do this b
 
     claim who    <-- replace with your own keyword
 
-You can now configure your keyword to post incoming messages to your AppFog application.  Go to the configuration page for your keyword and click on the "Receiving Message" tab.  Using the AppFog domain you chose, enter the delivery URL as follows. (in this example, my AppFog domain is ```who.aws.af.cm```::
+You can now configure your keyword to post incoming messages to your AppFog application.  Go to the configuration page for your keyword and click on the "Receiving Message" tab.  Using the AppFog domain you chose, enter the delivery URL as follows. (in this example, my AppFog domain is ``who.aws.af.cm``::
 
     http://who.aws.af.cm/sms/receive?text=%(text)s&number=%(number)s
 
-Set the **Delivery Method** to ```POST```, check the box for **Delivery Response**, then click **Save Delivery Settings**.
+Set the **Delivery Method** to ``POST``, check the box for **Delivery Response**, then click **Save Delivery Settings**.
 
 From that point on anyone will be able to send messages to your Django application using the keyword you picked.
 
