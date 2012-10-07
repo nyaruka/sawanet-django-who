@@ -14,11 +14,24 @@ Example queries::
 Getting Started
 -----------------
 
-To get started, download this repo, first create a virtual environment and install the requirements::
-  
+First create a directory to work in and move into it::
+
+    % mkdir smsproject
+    % cd smsproject
+
+Now download the git repo into the ```who``` directory::
+ 
+    % git clone git://github.com/nyaruka/sawanet-django-who.git who
+
+Create a virtual environment.  Note AppFog doesn't like virtual environments to be in the same directory as the app, so you have to create this in the ```smsproject``` directory::
+
     % virtualenv env
     % source env/bin/activate
-    % pip install -r requirements.txt
+
+Now install the dependencies::
+
+    % cd who
+    % pip instal -r requirements.txt
 
 Then sync the database::
    
