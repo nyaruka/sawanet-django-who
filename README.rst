@@ -5,11 +5,10 @@ This is a very simple Django application that demonstrates creating an SMS endpo
 
 The application allows users to send in messages in the format ``who [person name]`` and receive a brief summary from the Wikipedia page for that person.
 
-Example queries::
+Example::
 
-    who michael jackson
-    who sting
-    who museveni
+    >>> who michael jackson
+    <<< Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American recording artist, entertainer and businessman. Often referred to as the King of Pop, or by his initials MJ, Jackson is recognized as the most successful entertainer of all time by Guinness World Records.
 
 Getting Started
 -----------------
